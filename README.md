@@ -28,6 +28,6 @@ Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 **Note:** You must install a compatible version of **PyTorch with CUDA support** to enable GPU acceleration. Refer to the [official PyTorch installation guide](https://pytorch.org/get-started/locally/) for instructions based on your system and CUDA version.
