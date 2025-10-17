@@ -4,23 +4,18 @@ This repository contains example Jupyter notebooks demonstrating the use of the 
 
 ## Data
 
-The example data used in these notebooks consists of fMRI recordings from non-human primates under six different brain states: awake, low-dose propofol, high-dose propofol, ketamine, low-dose sevoflurane, and high-dose sevoflurane. The brain was parcellated into 82 regions, and each region contains 500 time samples. The dataset itself is not shared, but the analysis results are displayed within the notebooks as example.
+The example data used in these notebooks consists of fMRI recordings from non-human primates under six different brain states: awake, low-dose propofol, high-dose propofol, ketamine, low-dose sevoflurane, and high-dose sevoflurane. The brain was parcellated into 82 regions, and each region contains 500 time samples. The dataset itself is freely available data from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10572216.svg)](https://zenodo.org/records/10572216); related article: [https://doi.org/10.1371/journal.pone.0314598](https://doi.org/10.1371/journal.pone.0314598).
+
 
 ## Notebooks
 
-### 1. `whole_brain.ipynb`
+### 1. `demo_thoi.ipynb`
 
-Calculates the four informational measures — DTC, TC, O-Information, and S-Information — for each subject and brain state. The computations are based on the full set of 82 parcellated brain regions.
+Examples for the main functions of the thoi library
 
 ### 2. `simulated_annealing.ipynb`
 
-Demonstrates the use of simulated annealing to find subsets of regions (n-plets) that maximize or minimize a custom metric — in this case, Cohen’s d — between two states (e.g., awake vs. high-dose propofol).
-
-### 3. `simulated_annealing_awake_vs_rest.ipynb`
-
-Extends the previous approach by comparing the awake state to a weighted sum of all anesthetized states. It identifies n-plets of varying sizes (can take from 3 up to 81) that show the strongest differences according to the selected metric.
-
-Each notebook produces a `pandas` DataFrame to summarize and display the results.
+Demonstrates the use of simulated annealing to find subsets of regions (n-plets) that maximize or minimize a custom metric — in this case, Cohen’s d — between two states (e.g., awake vs. non responsive).
 
 ## Requirements
 
